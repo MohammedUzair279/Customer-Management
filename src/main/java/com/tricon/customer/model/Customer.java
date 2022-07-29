@@ -6,6 +6,8 @@ import javax.persistence.*;
 @Table(name = "customer")
 public class Customer {
 
+	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long customerId;
@@ -18,6 +20,11 @@ public class Customer {
 	
 	@Column (name = "City")
 	private String city;
+	
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
 
 	public Customer(long customerId, String lastName, String firstName, String city) {
 		super();
